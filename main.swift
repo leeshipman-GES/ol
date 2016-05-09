@@ -229,7 +229,7 @@ var businessArray : [[String: AnyObject]] = [ [String: AnyObject] ]()
 switch Process.arguments.count
 {
 case 1: // Print help if just the command is typed at command line.
-    print("Usage:\(Process.arguments[0]) <CSV File Path> [ID1, ..., ID5]")
+    print("Usage:\(Process.arguments[0]) <CSV File Path> [ID1 ID2 ... ID5]")
     exit(1)
     
 case 2...7:
@@ -249,7 +249,7 @@ case 2...7:
     
 default:
     print("Can't have more than 5 search IDs")
-    print("Usage:\(Process.arguments[0]) <CSV File Path> [ID1, ..., ID5]")
+    print("Usage:\(Process.arguments[0]) <CSV File Path> [ID1 ID2 ... ID5]")
     exit(1)
 }
 
